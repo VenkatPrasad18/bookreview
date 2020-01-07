@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>BookReview</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
+    <title> BookReview </title>
+      <%= csrf_meta_tags %>
+      <%= csp_meta_tag %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -32,7 +31,7 @@
 
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown" >
-            <a hef="#" class="dropdown-toggle" data_toggle="dropdown" role="button" aria-expanded="false"> Categories <span class="caret"></span></a>
+            <a hef="#" class="dropdown-toggle" data_toggle="dropdown" role="button" aria-expanded="false"> Category <span class="caret"></span></a>
 
             <ul class="dropdown-menu" role="menu">
               <% Category.all.each do |category| %>
@@ -58,6 +57,9 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
+
   </body>
 </html>
