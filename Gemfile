@@ -8,13 +8,14 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
 gem 'simple_form', '~> 5.0', '>= 5.0.1'
-gem 'bootstrap', '~> 4.4', '>= 4.4.1'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.4.1'
 gem 'devise', '~> 4.7', '>= 4.7.1'
+gem 'paperclip', '~> 6.1'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+gem 'bootstrap', '~> 4.0.0'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
